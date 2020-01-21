@@ -1,13 +1,197 @@
+/* latin */
+@font-face {
+  font-family: "Gloria Hallelujah";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Gloria Hallelujah"), local("GloriaHallelujah"),
+    url(https://fonts.gstatic.com/s/gloriahallelujah/v11/LYjYdHv3kUk9BMV96EIswT9DIbW-MIS11zM.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Jaldi"), local("Jaldi-Regular"),
+    url(https://fonts.gstatic.com/s/jaldi/v6/or3sQ67z0_CI33NTbJE.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: "Port Lligat Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Port Lligat Sans"), local("PortLligatSans-Regular"),
+    url(https://fonts.gstatic.com/s/portlligatsans/v8/kmKmZrYrGBbdN1aV7Vokow6Lw4s4p7R-Tg.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Karla"), local("Karla-Regular"),
+    url(https://fonts.gstatic.com/s/karla/v13/qkBbXvYC6trAT7RVLtw.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, #beab9efa, #ffffff);
+
+  background-size: cover;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.form-control {
+  display: inline-block;
+  width: 10%;
+  min-width: 120px;
+  max-width: 40%;
+  padding: 0.375rem 0.4rem;
+  margin-left: 5rem;
+  margin-right: 1rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  background-color: solid transparent;
+  border: solid transparent;
+  border-width: 1px 0;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  width: 10%;
+  min-width: 133px;
+  min-height: 2%;
+  /*margin-top: 0.2rem;
+  margin-bottom: 0.39rem; */
+}
+
+.pic {
+  min-width: 300px;
+  min-height: 466px;
+  background-color: black;
+  display: inline-block;
+}
+
+.div-inline {
+  border-radius: 10px;
+  margin-left: 1%;
+  overflow: hidden;
+  max-height: 21rem;
+  text-align: left;
+}
+
+.div-inline h5 {
+  font-family: "Jaldi", sans-serif;
+}
+
+.div-inline h1 {
+  font-family: "Port Lligat Sans", sans-serif;
+}
+
+.div-inline3 {
+  display: inline-block;
+  text-align: center;
+
+  width: 100%;
+}
+
+.col-sm input {
+  margin-left: auto;
+  text-align: left;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 35px;
+  float: center;
+  width: 135px;
+}
+
+.col-sm button {
+  margin-left: auto;
+  text-align: center;
+  margin-top: 2%;
+  padding-top: 2%;
+  float: center;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #6bd7f14f;
+}
+
+.separador {
+  width: 100%;
+  height: 100px;
+}
+
+.logo2 {
+  font-family: "Gloria Hallelujah", cursive;
+  display: inline-block;
+  margin-top: 0.3%;
+}
+
+.logo {
+  margin-bottom: 0.1%;
+}
+
+.futer {
+  background-color: #6bd7f14f;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 7%;
+  margin-top: 7px;
+}
+
+.descripcion {
+  font-family: "Karla", sans-serif;
 }

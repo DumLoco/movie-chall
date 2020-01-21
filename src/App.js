@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import FetchMain from "./components/FetchMain";
+import "./App.css";
+import Navbar from "./components/navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.fetchElement = React.createRef();
+  }
+  state = {
+    inputValue: ""
+  };
+
+  handleKeyPress = event => {
+    if (event.key === "Enter") {
+      let titulo = this.state.inputValue;
+      this.fetchElement.current.buscarPelicula(titulo);
+    }
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <Navbar />
+        <div className="separador"></div>
+        <FetchMain
+          peli={this.state.inputValue}
+          press={event => this.handleKeyPress(event)}
+          ref={this.fetchElement}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
