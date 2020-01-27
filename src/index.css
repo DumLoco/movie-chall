@@ -69,8 +69,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, #beab9efa, #ffffff);
-
+  background-image: linear-gradient(to left, #ebf7f3fa, #ffffff);
   background-size: cover;
 }
 
@@ -96,55 +95,8 @@ code {
   border-width: 1px 0;
 }
 
-.btn.btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-  width: 10%;
-  min-width: 133px;
-  min-height: 2%;
-  /*margin-top: 0.2rem;
-  margin-bottom: 0.39rem; */
-}
-
-.pic {
-  min-width: 300px;
-  min-height: 466px;
-  background-color: black;
-  display: inline-block;
-}
-
-.div-inline {
-  border-radius: 10px;
-  margin-left: 1%;
-  overflow: hidden;
-  max-height: 21rem;
-  text-align: left;
-}
-
-.div-inline h5 {
-  font-family: "Jaldi", sans-serif;
-}
-
-.div-inline h1 {
+.card-title {
   font-family: "Port Lligat Sans", sans-serif;
-}
-
-.div-inline3 {
-  display: inline-block;
-  text-align: center;
-
-  width: 100%;
-}
-
-.col-sm input {
-  margin-left: auto;
-  text-align: left;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  height: 35px;
-  float: center;
-  width: 135px;
 }
 
 .col-sm button {
@@ -165,12 +117,12 @@ code {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: #6bd7f14f;
+  background-color: #8ebcc7be;
 }
 
 .separador {
   width: 100%;
-  height: 100px;
+  height: 50px;
 }
 
 .logo2 {
@@ -184,14 +136,134 @@ code {
 }
 
 .futer {
-  background-color: #6bd7f14f;
+  background-color: #8ebcc7be;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 7%;
+  height: 50px;
+  min-height: 7%;
   margin-top: 7px;
+  text-align: right;
+}
+
+.futer span {
+  position: relative;
+  top: 0.6em;
+  color: rgb(94, 91, 91);
+}
+
+.futer span {
+  margin-right: 1%;
+  padding-top: 10px;
 }
 
 .descripcion {
   font-family: "Karla", sans-serif;
+}
+
+.container2 {
+  flex-direction: row;
+  width: 100%;
+}
+
+.card {
+  width: 18rem;
+  background-color: #beab9efa;
+  max-height: 580px;
+  min-height: 570px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+
+.card2 {
+  width: 60%;
+  background-color: #8ebcc7be;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.card2 h1 {
+  font-family: "Port Lligat Sans", sans-serif;
+}
+
+.card-header {
+  border-radius: 50px;
+  background-color: #ffffff00;
+}
+
+.card-img-top {
+  min-width: 287px;
+  max-width: 287px;
+  min-height: 423px;
+  max-height: 423px;
+}
+
+.card-body2 {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.card {
+  background-color: rgb(152, 158, 146);
+  border-radius: 50px;
+}
+
+.img-container {
+  background-color: #000000;
+}
+
+.img-container img {
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1080px) {
+  .img-container img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 1.4em;
+  }
+}
+
+blockquote h1,
+h4 {
+  text-shadow: 2px 2px 5px rgb(61, 61, 61);
+  color: rgb(255, 255, 255);
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+.card-header2 h3 {
+  text-shadow: 2px 2px 5px rgb(61, 61, 61);
+  color: rgb(255, 255, 255);
+}
+
+.about h2 {
+  text-shadow: 2px 2px 5px rgb(61, 61, 61);
+  color: rgb(255, 255, 255);
+}
+
+.btn-primary {
+  background-color: #3d77b4;
+}
+
+.btn-searchbox {
+  color: #fff;
+  background-color: #3d77b4;
+  border-color: #74a9e2;
+}
+
+.btn-searchbox:hover {
+  color: #fff;
+  background-color: #456ffc;
 }
