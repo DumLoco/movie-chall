@@ -4,18 +4,24 @@ import { Link } from "react-router-dom";
 const Detalles = ({ match }) => {
   useEffect(() => {
     fetchPeli();
+
     console.log(match);
   }, []);
   const [peli, setPeli] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const fetchPeli = async () => {
+    setLoading(true);
     const fetchPeli = await fetch(
       `https://www.omdbapi.com/?apikey=fec0f00e&i=${match.params.id}&plot=short`
     );
     const peli = await fetchPeli.json();
     setPeli(peli);
+    setLoading(false);
   };
-
+  if (loading === true) {
+    return <h1>Cargando...</h1>;
+  }
   return (
     <div className="card2">
       <div className="card-header2">
